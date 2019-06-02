@@ -1,0 +1,16 @@
+{
+  "name": "tamara-page-objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "webdriver-manager update",
+    "test": "protractor test/protractor.conf.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "protractor": "^5.4.2",
+    "protractor-helper": "^3.7.7"
+  }
+}
