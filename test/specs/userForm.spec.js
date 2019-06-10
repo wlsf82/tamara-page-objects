@@ -22,6 +22,9 @@ describe("Create user form", () => {
   });
 
   it("Successful creation", () => {
+    createUserForm.fillMandatoryFieldsAndSubmit("Walmyr", "Filho", "teste@teste.com.br");
     
+    helper.waitForElementVisibility(createUserForm.success);
+    helper.waitForTextToBePresentInElement(createUserForm.success, "Usuário Criado com sucesso")
   });
 });

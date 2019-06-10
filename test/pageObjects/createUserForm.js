@@ -7,6 +7,7 @@ class CreateUserForm {
     this.firstName = element(by.id("user_name"));
     this.lastName = element(by.id("user_lastname"));
     this.email = element(by.id("user_email"));
+    this.success = element(by.id("notice")); 
   }
 
   fillMandatoryFieldsAndSubmit(firstName, lastName, email) {
